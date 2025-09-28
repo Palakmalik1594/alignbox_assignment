@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alignbox Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <!-- Chat Header -->
+    <div class="chat-header">
+      <img src="pexels-valeriiamiller-3910065.jpg" 
+           alt="Group Avatar" 
+           style="width:32px;height:32px;border-radius:50%;margin-right:8px;object-fit:cover;">
+      Fun Friday Group
+      <button id="incognitoToggle" title="Toggle Incognito" 
+              style="margin-left:auto;background:none;border:none;cursor:pointer;font-size:18px;">
+        👤
+      </button>
+    </div>
+
+    <!-- Chat Messages -->
+    <div class="messages" id="messages"></div>
+
+    <!-- Chat Footer -->
+    <div class="chat-footer">
+      <button class="footer-btn" id="attachBtn" title="Attach file">📎</button>
+      <button class="footer-btn" id="cameraBtn" title="Send photo">📷</button>
+      <input type="text" id="messageInput" placeholder="Type a message..." />
+      <button id="sendButton" disabled>➤</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
